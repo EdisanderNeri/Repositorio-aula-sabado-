@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Gamer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="caixa">
+    <h1>NEONCORE</h1>
+    <p>Crie sua conta gamer</p>
+    <form id="formulario">
+      <label for="nome">Nome de usuário</label>
+      <input id="nome" type="text" required minlength="3" placeholder="Seu nick">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" required placeholder="seuemail@exemplo.com">
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" required minlength="6" placeholder="Pelo menos 6 caracteres">
+      <label for="confirmar">Confirmar senha</label>
+      <input id="confirmar" type="password" required placeholder="Repita sua senha">
+      <label class="termos"><input id="termos" type="checkbox" required> Aceito os termos</label>
+      <p id="mensagem" role="alert"></p>
+      <button type="submit">Confirmar cadastro</button>
+    </form>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
